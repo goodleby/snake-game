@@ -1,3 +1,3 @@
-import { sum } from './components/sum';
+import { Game } from './components/game';
 
-console.log(sum(3, 2, 1));
+const game = new Game('#root', 21);
