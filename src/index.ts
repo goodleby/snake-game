@@ -1,3 +1,3 @@
-import { Game } from './components/game';
+import Game from './components/game';
 
-const game = new Game('#root', 21);
+const game = new Game('#root');

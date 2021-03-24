@@ -1,7 +1,7 @@
-import { Coordinates } from '../../interfaces';
+import { GameCoordinates } from './game';
 
 export class Apple {
-  coordinates: Coordinates;
+  coordinates: GameCoordinates;
   score: number;
   color: string;
 
@@ -11,3 +11,5 @@ export class Apple {
     this.color = color;
   }
 }
+
+export default Apple;

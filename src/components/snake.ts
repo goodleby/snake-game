@@ -1,9 +1,9 @@
-import { Coordinates, direction } from '../../interfaces';
-import { moveCoordinates } from '../coordinates';
+import { GameCoordinates } from './game';
+import { direction, moveCoordinates } from './coordinates';
 
 export class Snake {
   length: number;
-  body: Coordinates[];
+  body: GameCoordinates[];
 
   constructor(x: number, y: number, length: number) {
     this.length = length;
@@ -20,3 +20,5 @@ export class Snake {
     this.length += amount;
   }
 }
+
+export default Snake;

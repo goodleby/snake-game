@@ -10,11 +10,39 @@ html {
 }
 body {
   background-color: #333;
+  color: #fff;
   margin: 0;
+  overflow: hidden;
+  overscroll-behavior-y: contain;
 }
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
+}
+.score {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.messages {
+  font-size: 22px;
+  line-height: 1;
+  min-height: 4em;
+  margin-bottom: 12px;
+}
+.message {
+  text-align: center;
+  padding: 0 16px;
+  margin-bottom: 6px;
+  &.info {
+    color: #ff2;
+  }
+  &.success {
+    color: #2f2;
+  }
+  &.danger {
+    color: #f22;
+  }
 }

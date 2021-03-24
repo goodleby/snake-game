@@ -1,9 +1,11 @@
-import { Coordinates, direction } from '../../interfaces';
+import { GameCoordinates } from './game';
+
+export type direction = 'left' | 'right' | 'up' | 'down';
 
 export const moveCoordinates = (
-  coordinates: Coordinates,
+  coordinates: GameCoordinates,
   direction: direction
-): Coordinates => {
+): GameCoordinates => {
   let { x, y } = coordinates;
   switch (direction) {
     case 'left':
